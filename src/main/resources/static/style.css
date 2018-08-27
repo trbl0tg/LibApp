@@ -1,43 +1,9 @@
 body{
     color: #26292b;
-    object-fit: cover;
-    background-color: #bbe4d9;
+    background-image: url(static/logo.png);
 }
 
 .preview{
     width: 100px;
     object-fit: cover;
-}
-
-.page-footer{
-    z-index: 3;
-    background-color: #ffffff;
-    width: 65%;
-    opacity: .5;
-    margin: 0 auto;
-
-}
-a{
-    color: #375759;
-}
-
-.btn{
-    background-color: #375759;
-    color: #f1eede;
-}
-.btn:hover{
-    background-color: #2c4648;
-}
-
-.nav-link:hover{
-    color: whitesmoke;
-}
-
-.nav-item:hover{
-    background-color: #65b4ad;
-}
-
-
-table{
-   border-color: #2c4648;
 }

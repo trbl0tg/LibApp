@@ -42,8 +42,11 @@ public class  MainController {
     private BookService bookService;
 
     @GetMapping("/")
-    public String greeting(Map<String, Object> model){
-        return "greeting";
+    public String greeting(@AuthenticationPrincipal User user){
+        if (user!=null){
+            return "greeting";
+        }
+        return   "redirect:/login";
     }
 
 

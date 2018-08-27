@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="/static/style.css"/>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
-<body>
+<body background="/static/bg.jpg">
     <#include "navbar.ftl">
 <div class="container mt-5">
     <#nested>

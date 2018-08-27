@@ -10,7 +10,6 @@
     </div>
     </#if>
 
-
     <#if message??>
     <div class="alert alert-${messageType}" role="alert">
         ${message}
