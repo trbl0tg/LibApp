@@ -13,7 +13,7 @@
 </head>
 <body background="/static/bg.jpg">
     <#include "navbar.ftl">
-<div class="container mt-5">
+<div class="container-fluid mt-5">
     <#nested>
 </div>
 <#include "footer.ftl">

@@ -2,7 +2,7 @@
 <#import "login.ftl" as l>
 
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #75cfc5; opacity: 0.9">
+<nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="/">
         <img src="/static/logo.png" width="30" height="30" alt=""/>
         Libapp
@@ -13,10 +13,11 @@
 
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+                <#if isRegistrated>
             <li class="nav-item">
-                <a class="nav-link " href="/main">Books</a>
+                <a class="nav-link" href="/main">Books</a>
             </li>
-             <#if isRegistrated>
+
             <#if isAdmin>
                  <li class="nav-item">
                      <a class="nav-link " href="/user">UserList</a>

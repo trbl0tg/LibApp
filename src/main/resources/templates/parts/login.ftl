@@ -1,8 +1,11 @@
+
+
 <#macro login path isRegisterForm>
+
+
     <form action="${path}" method="post">
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label"> User Name : </label>
-            <div class="col-sm-4">
+
                 <input type="text" name="username" class="form-control ${(usernameError??)?string('is-invalid', '')}"
                        placeholder="Username" value="<#if user??>${user.username}</#if>"/>
                        <#if usernameError??>
@@ -10,13 +13,10 @@
                     ${usernameError}
                 </div>
                        </#if>
-            </div>
         </div>
 
     <#if isRegisterForm>
            <div class="form-group row">
-               <label class="col-sm-2 col-form-label"> Email : </label>
-               <div class="col-sm-4">
                    <input type="email" name="email" class="form-control ${(emailError??)?string('is-invalid', '')}"
                           placeholder="some@some.com" value="<#if user??>${user.email}</#if>"/>
                   <#if emailError??>
@@ -24,21 +24,17 @@
                     ${emailError}
                 </div>
                   </#if>
-               </div>
            </div>
 
     </#if>
 
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label"> Password : </label>
-            <div class="col-sm-4">
                 <input type="password" name="password" class="form-control ${(passwordError??)?string('is-invalid', '')}" placeholder="Password"/>
                             <#if passwordError??>
                 <div class="invalid-feedback">
                     ${passwordError}
                 </div>
                             </#if>
-            </div>
         </div>
 
     <#if isRegisterForm>
@@ -46,34 +42,38 @@
 
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label"> Repeat password : </label>
-                <div class="col-sm-4">
                     <input type="password" name="password2" class="form-control ${(password2Error??)?string('is-invalid', '')}" placeholder="Repeat password"/>
                             <#if password2Error??>
                 <div class="invalid-feedback">
                     ${password2Error}
                 </div>
                             </#if>
-                </div>
             </div>
+    <div class="form-group row">
+        <div class="g-recaptcha" data-sitekey="6LcpnWoUAAAAABMPqtaj9y-IhQY5P5xMjnKCd6zU"></div>
 
-    <div class="col-sm-6">
-        <div class="g-recaptcha my-3" data-sitekey="6LcpnWoUAAAAABMPqtaj9y-IhQY5P5xMjnKCd6zU"></div>
                 <#if captchaError??>
                     <div class="alert alert-danger" role="alert">
                         ${captchaError}
                     </div>
                 </#if>
     </div>
-
     </#if>
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
 
-    <#if !isRegisterForm><a href="/registration" class="mr-5">Add new user</a></#if>
-
-        <button class="btn btn-primary" type="submit"><#if isRegisterForm>Register<#else>Sign In</#if></button>
-
+        <div class="row">
+    <#if !isRegisterForm>
+    <div class="col mr-1" id="btnstack"">
+        <#--<a href="/registration" class="mr-5">Add new user</a>-->
+        <input type="button" class="btn" value="Create" onclick="location.href='/registration'">
+    </div>
+    </#if>
+            <div class="col" id="btnstack"">
+        <button class="btn" type="submit"><#if isRegisterForm>Register<#else>Sign In</#if></button>
+            </div>
+        </div>
     </form>
+
 </#macro>
 
 <#macro logout>

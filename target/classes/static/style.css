@@ -1,9 +1,95 @@
-body{
-    color: #26292b;
-    background-image: url(static/logo.png);
+@font-face {
+    font-family: "Uni Sans"; /* Гарнитура шрифта */
+    src: url(static/fonts/UniSansThin.otf); /* Путь к файлу со шрифтом */
 }
+
+body{
+    background: url("/static/bg.jpg")center center fixed no-repeat;
+    background-color: #cccccc;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
 
 .preview{
     width: 100px;
     object-fit: cover;
+}
+
+.spacer{
+    height: 100vh;
+}
+input[type=text], input[type=password], input[type=file]{
+    border: none;
+    border-radius: unset;
+    color: #2c9a88;
+    font-family: "Uni Sans";
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+.btn{
+    font-family: "Uni Sans";
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: unset;
+    background: none;
+    outline:2px solid #ffffff;
+    margin: 0;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    outline:2px solid #ffffff;
+    color: #2c9a88;
+    transition: all ease-in-out .2s;
+}
+
+#btnstack{
+    padding: 0;
+    margin: 0 4px  ;
+}
+
+.alert-danger{
+    opacity: .689;
+    color: indianred;
+    background-color: #fff;
+}
+
+.line{
+    position: relative;
+    padding: 0px;
+    background: #fff;
+    width: calc(100% + 40px) ;
+    left: -20px;
+    height: 2px;
+}
+
+a{
+    color: #ffffff;
+}
+a:hover{
+    color: #bcc8c8;
+}
+a:active{
+    color: #aec0c9;
 }
