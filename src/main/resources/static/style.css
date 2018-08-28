@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "Uni Sans"; /* Гарнитура шрифта */
+    font-family: "Uni Sans Thin"; /* Гарнитура шрифта */
     src: url(static/fonts/UniSansThin.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "Uni Sans Heavy"; /* Гарнитура шрифта */
+    src: url(static/fonts/UniSansHeavy.otf); /* Путь к файлу со шрифтом */
 }
 
 body{
@@ -13,8 +17,6 @@ body{
 
 }
 
-
-
 .preview{
     width: 100px;
     object-fit: cover;
@@ -23,28 +25,41 @@ body{
 .spacer{
     height: 100vh;
 }
-input[type=text], input[type=password], input[type=file]{
+input[type=text], input[type=password], input[type=email], input[type=file]{
     border: none;
     border-radius: unset;
     color: #2c9a88;
     font-family: "Uni Sans";
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+input[type=text]:active{
+    color: #2c9a88;
+
 }
 
 ::-webkit-input-placeholder {
+    color: #2c9a88;
     text-align: center;
 }
 
 :-moz-placeholder { /* Firefox 18- */
+    color: #2c9a88;
     text-align: center;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
+    color: #2c9a88;
     text-align: center;
 }
 
 :-ms-input-placeholder {
+    color: #2c9a88;
     text-align: center;
 }
+
+
 
 .btn{
     font-family: "Uni Sans";
@@ -78,10 +93,11 @@ input[type=text], input[type=password], input[type=file]{
 .line{
     position: relative;
     padding: 0px;
-    background: #fff;
+
+    background: rgba(174, 192, 201, 0.82);
     width: calc(100% + 40px) ;
     left: -20px;
-    height: 2px;
+    height: 1px;
 }
 
 a{
@@ -92,4 +108,35 @@ a:hover{
 }
 a:active{
     color: #aec0c9;
+}
+
+.imgicon{
+    opacity: .4;
+}
+.imgicon:hover{
+    /*cursor: pointer;*/
+    opacity: 1;
+    transition: opacity ease-in-out 0.1s;
+}
+
+.social {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: "Uni Sans";
+    font-size: 13px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    /*min-width: 300px;*/
+}
+#social_icon{
+    margin: 0 3px;
+    width: 23px;
+    height: 23px;
+}
+
+.textPre{
+    margin-right: 10px ;
 }

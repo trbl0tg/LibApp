@@ -1,11 +1,11 @@
 <#include "security.ftl">
 
 
-<a class="btn btn-outline-secondary"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Book editor
 </a>
 
-</div>
+
 
 <div class="collapse mt-3 <#if book??>show</#if>" id="collapseExample">
     <div class="form-group">
@@ -47,7 +47,7 @@
             </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
             <input type="hidden" name="id" value="<#if book??>${book.id}</#if>"/>
-            <button type="submit" class="btn btn-primary">Save book</button>
+            <button type="submit" class="btn">Save book</button>
         </form>
     </div>
 </div>

@@ -1,15 +1,24 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
 
+<div class="row">
 
-<div class="form-row">
-    <form method="get" action="/main" class="form-inline">
-        <input type="text" class="form-control" name="filter" value="${filter?ifExists}" placeholder="Search by tag filter"/>
-        <button class="btn btn-outline-secondary mx-5" type="submit">Search</button>
-    </form>
+    <div class="col">
 
-<#include "parts/bookEdit.ftl"/>
+        <#include "parts/booksList.ftl"/>
+    </div>
+    <div class="col">
 
-<#include "parts/booksList.ftl"/>
+        <form method="get" action="/main">
+            <input type="text" class="form-control" name="filter" value="${filter?ifExists}" placeholder="Search by tag filter"/>
+            <button class="btn" type="submit">Search</button>
+            <#include "parts/bookEdit.ftl"/>
+
+        </form>
+    </div>
+
+</div>
+
+
 
 </@c.page>
