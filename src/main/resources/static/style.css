@@ -2,10 +2,6 @@
     font-family: "Uni Sans Thin"; /* Гарнитура шрифта */
     src: url(static/fonts/UniSansThin.otf); /* Путь к файлу со шрифтом */
 }
-@font-face {
-    font-family: "Uni Sans Heavy"; /* Гарнитура шрифта */
-    src: url(static/fonts/UniSansHeavy.otf); /* Путь к файлу со шрифтом */
-}
 
 body{
     background: url("/static/bg.jpg")center center fixed no-repeat;
@@ -143,3 +139,4 @@ a:active{
 .textPre{
     margin-right: 14px;
 }
+
