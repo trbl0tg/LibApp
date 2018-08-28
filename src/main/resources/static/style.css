@@ -123,9 +123,9 @@ a:active{
     margin-right: 10px;
     margin-bottom: 10px;
     font-family: "Uni Sans";
-    font-size: 13px;
+    font-size: 14px;
     color: #ffffff;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     display: inline-block;
@@ -133,10 +133,13 @@ a:active{
 }
 #social_icon{
     margin: 0 3px;
-    width: 23px;
-    height: 23px;
+    width: 45px;
+    height: 26px;
+    padding: 0;
+    padding-top: 2px;
+    letter-spacing: 3px;
+    z-index: 3;
 }
-
 .textPre{
-    margin-right: 10px ;
+    margin-right: 14px;
 }

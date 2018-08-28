@@ -63,7 +63,7 @@
 
         <div class="row">
     <#if !isRegisterForm>
-    <div class="col mr-1" id="btnstack"">
+    <div class="col mr-1" id="btnstack">
         <#--<a href="/registration" class="mr-5">Add new user</a>-->
         <input type="button" class="btn" value="Create" onclick="location.href='/registration'">
     </div>
@@ -78,7 +78,7 @@
 
 <#macro logout>
            <form action="/logout" method="post">
-               <input type="submit" class="btn btn-primary" value="Sign Out"/>
+               <input type="submit" class="btn" value="Sign Out"/>
                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
            </form>
 </#macro>

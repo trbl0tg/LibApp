@@ -42,7 +42,7 @@ public class  MainController {
     private BookService bookService;
 
     @GetMapping("/")
-    public String greeting(@AuthenticationPrincipal User user){
+    public String greeting(@AuthenticationPrincipal User user, Model model){
         if (user!=null){
             return "greeting";
         }
@@ -53,8 +53,6 @@ public class  MainController {
     @GetMapping("/main")
     public String main(@RequestParam(required = false, defaultValue = "")String filter, Model model){
         Iterable<Book> books =  bookRepo.findAll();
-
-
 
         if (filter!=null && !filter.isEmpty()){
             books = bookRepo.findByTag(filter);

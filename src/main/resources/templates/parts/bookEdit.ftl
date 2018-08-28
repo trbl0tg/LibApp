@@ -1,11 +1,11 @@
 <#include "security.ftl">
 
 
-<a class="btn"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn btn-outline-secondary"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Book editor
 </a>
 
-
+</div>
 
 <div class="collapse mt-3 <#if book??>show</#if>" id="collapseExample">
     <div class="form-group">
