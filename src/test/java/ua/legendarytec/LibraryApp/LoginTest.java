@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-@TestPropertySource("/application-test.properties")
+@TestPropertySource(locations = "/application-test.properties")
 public class LoginTest {
 
     @Autowired

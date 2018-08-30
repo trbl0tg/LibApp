@@ -2,10 +2,6 @@
     font-family: "Uni Sans Thin"; /* Гарнитура шрифта */
     src: url(static/fonts/UniSansThin.otf); /* Путь к файлу со шрифтом */
 }
-@font-face {
-    font-family: "Uni Sans Heavy"; /* Гарнитура шрифта */
-    src: url(static/fonts/UniSansHeavy.otf); /* Путь к файлу со шрифтом */
-}
 
 body{
     background: url("/static/bg.jpg")center center fixed no-repeat;
@@ -142,4 +138,28 @@ a:active{
 }
 .textPre{
     margin-right: 14px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    background-color: rgba(188, 200, 200, 0.05);
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: rgba(245, 245, 245, 0.02);
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+    background-color: rgba(85, 85, 85, 0);
+}
+
+#books-list td{
+    color: #d1d1d1;
 }

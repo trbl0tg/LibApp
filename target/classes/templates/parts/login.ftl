@@ -53,7 +53,8 @@
         <div class="g-recaptcha" data-sitekey="6LcpnWoUAAAAABMPqtaj9y-IhQY5P5xMjnKCd6zU"></div>
 
                 <#if captchaError??>
-                    <div class="alert alert-danger" role="alert">
+
+                    <div style="color: red" role="alert">
                         ${captchaError}
                     </div>
                 </#if>

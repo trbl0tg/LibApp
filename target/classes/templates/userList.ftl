@@ -2,19 +2,22 @@
 
 <@c.page>
 
-<h1>List of users</h1>
+<h1 class="m-4" style="font-family: 'Uni Sans'; color: #ffffff">List of users</h1>
 
-<table class="table mt-5">
+<div class="row justify-content-md-center">
+<div class="col" style="max-width: 90vw; font-family: 'Uni Sans'; color: #ffffff">
 
-    <thead>
-    <tr>
-        <th>Name</th>
-        <th>Role</th>
-        <th></th>
-    </tr>
-    </thead>
+    <table class="table mt-5">
 
-    <tbody>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
 
        <#list users as user>
 
@@ -32,8 +35,12 @@
 
        </#list>
 
-    </tbody>
+        </tbody>
 
-</table>
+    </table>
+</div>
+
+</div>
+
 
 </@c.page>
