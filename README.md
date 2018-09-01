@@ -1,0 +1,2 @@
+# LibApp
+LibApp is simple  pet Java project made for learning, using MVC template. Also this project based on such stack: SpringBoot - Spring, Hibernate, JPA, JDBC, FTL, Web stack(HTML, CSS, JS + Bootstrap) etc. This project is partly covered with tests(Integration test + Unit tests(in future)). (javadoc + docmentation in future). Project made by Gleb Shvydkov, student of NTU, Faculty of Transport and Information technologies. 2018 
