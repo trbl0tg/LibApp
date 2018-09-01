@@ -28,9 +28,9 @@
                 </div>
                 </#if>
 
-                <div class="custom-file mt-3">
-                    <input type="file" name="file" id="customFile"/>
+                <div class="custom-file mt-3" style="font-family: 'Uni Sans'">
                     <label class="custom-file-label" for="customFile">Choose file</label>
+                    <input type="file" name="file" id="customFile"/>
                 </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
             <input type="hidden" name="id" value="<#if book??>${book.id}</#if>"/>
