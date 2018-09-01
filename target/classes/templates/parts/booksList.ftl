@@ -1,6 +1,6 @@
 <#include "security.ftl">
 
-<table class="table mt-5">
+<table class="table" style="color: #ffffff">
     <thead>
     <tr style="background-color: #a5c7be;">
         <th style="border-color: #8aa8a0">Preview</th>
@@ -23,7 +23,7 @@
             </#if>
       </td>
       <td style="border-color: #8aa8a0">
-          <h5>${book.bookName?ifExists}</h5>
+          <h5 style="font-family: 'Uni Sans'; color: #eeeeee; font-weight: bold">${book.bookName?ifExists}</h5>
           ${book.bookDetails?ifExists}
 
 
@@ -34,7 +34,7 @@
       <td style="border-color: #8aa8a0"><a href="/user-books/${book.messageAuthor.id}">${book.messageAuthorName?ifExists}</a>
           <#if book.messageAuthor.id==currentUserId>
             <div>
-                <a class="btn btn-primary" href="/user-books/${book.messageAuthor.id}?book=${book.id}">Edit</a>
+                <a class="btn" href="/user-books/${book.messageAuthor.id}?book=${book.id}">Edit</a>
             </div>
           <div>
               <a href="/user-books/delete/${book.messageAuthor.id}?book=${book.id}">Delete</a>

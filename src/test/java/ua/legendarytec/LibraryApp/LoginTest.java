@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-@TestPropertySource("/application-test.properties")
+@TestPropertySource(locations = "/application-test.properties")
 public class LoginTest {
 
     @Autowired
@@ -35,8 +35,7 @@ public class LoginTest {
     public void contextLoads () throws Exception{
        this.mockMvc.perform(get("/"))
                .andDo(print())
-               .andExpect(status().isOk())
-               .andExpect(content().string(containsString("Its a simple petproject of library app built with SpringBoot (Hibernate, JPA, Spring...)")));
+               .andExpect(status().is3xxRedirection());
     }
 
     @Test

@@ -53,7 +53,8 @@
         <div class="g-recaptcha" data-sitekey="6LcpnWoUAAAAABMPqtaj9y-IhQY5P5xMjnKCd6zU"></div>
 
                 <#if captchaError??>
-                    <div class="alert alert-danger" role="alert">
+
+                    <div style="color: red" role="alert">
                         ${captchaError}
                     </div>
                 </#if>
@@ -63,7 +64,7 @@
 
         <div class="row">
     <#if !isRegisterForm>
-    <div class="col mr-1" id="btnstack"">
+    <div class="col mr-1" id="btnstack">
         <#--<a href="/registration" class="mr-5">Add new user</a>-->
         <input type="button" class="btn" value="Create" onclick="location.href='/registration'">
     </div>
