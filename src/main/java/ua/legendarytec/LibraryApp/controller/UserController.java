@@ -1,4 +1,4 @@
-package ua.legendarytec.LibraryApp.controller;
+package ua.legendarytec.apteka.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -6,9 +6,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ua.legendarytec.LibraryApp.domain.Role;
-import ua.legendarytec.LibraryApp.domain.User;
-import ua.legendarytec.LibraryApp.service.UserSevice;
+import ua.legendarytec.apteka.domain.Role;
+import ua.legendarytec.apteka.domain.User;
+import ua.legendarytec.apteka.service.UserSevice;
 
 import java.util.Map;
 

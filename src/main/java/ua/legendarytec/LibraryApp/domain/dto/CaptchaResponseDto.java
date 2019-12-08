@@ -1,4 +1,4 @@
-package ua.legendarytec.LibraryApp.domain.dto;
+package ua.legendarytec.apteka.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

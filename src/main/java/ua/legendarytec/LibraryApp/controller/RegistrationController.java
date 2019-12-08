@@ -1,10 +1,8 @@
-package ua.legendarytec.LibraryApp.controller;
+package ua.legendarytec.apteka.controller;
 
 
-import org.hibernate.mapping.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -15,10 +13,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
-import ua.legendarytec.LibraryApp.domain.User;
-import ua.legendarytec.LibraryApp.domain.dto.CaptchaResponseDto;
-import ua.legendarytec.LibraryApp.repos.UserRepo;
-import ua.legendarytec.LibraryApp.service.UserSevice;
+import ua.legendarytec.apteka.domain.User;
+import ua.legendarytec.apteka.domain.dto.CaptchaResponseDto;
+import ua.legendarytec.apteka.repos.UserRepo;
+import ua.legendarytec.apteka.service.UserSevice;
 
 
 import javax.validation.Valid;

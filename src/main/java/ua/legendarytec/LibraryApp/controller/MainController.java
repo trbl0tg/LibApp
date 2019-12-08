@@ -1,4 +1,4 @@
-package ua.legendarytec.LibraryApp.controller;
+package ua.legendarytec.apteka.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,16 +7,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-import ua.legendarytec.LibraryApp.domain.Book;
-import ua.legendarytec.LibraryApp.domain.User;
-import ua.legendarytec.LibraryApp.repos.BookRepo;
-import ua.legendarytec.LibraryApp.service.BookService;
+import ua.legendarytec.apteka.domain.Book;
+import ua.legendarytec.apteka.domain.User;
+import ua.legendarytec.apteka.repos.BookRepo;
+import ua.legendarytec.apteka.service.BookService;
 
 import javax.validation.Valid;
 import java.io.File;
@@ -24,10 +23,6 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 @Controller
 public class  MainController {

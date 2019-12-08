@@ -1,4 +1,4 @@
-package ua.legendarytec.LibraryApp.controller;
+package ua.legendarytec.apteka.controller;
 
 
 import org.springframework.stereotype.Controller;

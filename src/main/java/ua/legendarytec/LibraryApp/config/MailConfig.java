@@ -1,4 +1,4 @@
-package ua.legendarytec.LibraryApp.config;
+package ua.legendarytec.apteka.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

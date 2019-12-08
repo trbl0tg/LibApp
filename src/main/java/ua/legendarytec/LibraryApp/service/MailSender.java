@@ -1,4 +1,4 @@
-package ua.legendarytec.LibraryApp.service;
+package ua.legendarytec.apteka.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
